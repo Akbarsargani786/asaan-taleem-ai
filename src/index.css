@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sindhi: 'Noto Sans Arabic', 'Lateef', 'Segoe UI', Tahoma, sans-serif;
+    --font-urdu: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', sans-serif;
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sindhi);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  /* Make sure text in input and editable fields can still be selected */
+  input, textarea, [contenteditable="true"] {
+    user-select: text;
+  }
+}
+
+.font-sindhi {
+  font-family: var(--font-sindhi);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+}
+
+.font-latin {
+  font-family: var(--font-latin);
+}
+
+/* Touch active scale effect for buttons */
+.btn-press {
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+.btn-press:active {
+  transform: scale(0.96);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Asaan Taleem AI",
+  "description": "Mobile-friendly educational AI companion helping students learn Math, Science, and more in Sindhi, Urdu, and English with step-by-step explanations, homework photo analysis, quizzes, voice read-aloud, and offline study cards.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
